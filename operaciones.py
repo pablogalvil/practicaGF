@@ -20,3 +20,22 @@ def multiplicar(num1, num2):
         return (num1)
     else:
         print("No son enteros o float")
+
+def dividir(a, b):
+    # Comprobar que los valores sean int o float
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise ValueError("Ambos valores deben ser int o float.")
+    
+    # Comprobar que el divisor no sea cero
+    if b == 0:
+        raise ValueError("No se puede dividir entre cero.")
+    
+    # Realizar la división de forma iterativa
+    resultado = 0
+    while a >= b:
+        a -= b
+        resultado += 1
+
+    # Si la división no es exacta, se devuelve el residuo
+    residuo = a
+    return resultado, residuo
