@@ -1,4 +1,4 @@
-from operaciones import sumar, restar, multiplicar, dividir,factorial_iterativo
+from operaciones import sumar, restar, multiplicar, dividir,factorial_iterativo, fibonacci
 
 def mostrar_menu():
     print("Menú de opciones:")
@@ -7,6 +7,7 @@ def mostrar_menu():
     print("3- Multiplicar")
     print("4- Dividir")
     print("5- Salir")
+    print("8- Fibonacci")
     
     # Pedir al usuario que seleccione una opción
     opcion = input("Seleccione una opcion (1-5): ")
@@ -67,6 +68,12 @@ def mostrar_menu():
         num1 = int(num1)
         
         print(f"El factorial de {num1} es {factorial_rescursivo(num1)}")
+    elif opcion == '8':
+        num1 = input("Introduce el primer numero: ")
+
+        num1 = int(num1)
+
+        print(f"El fibonacci de {num1} es {fibonacci_iterativo(num1)}")
     else:
         print("Opcion no valida")
     return opcion
