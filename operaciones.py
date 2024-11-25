@@ -39,3 +39,46 @@ def dividir(a, b):
     # Si la división no es exacta, se devuelve el residuo
     residuo = a
     return resultado, residuo
+
+# operaciones.py
+
+def factorial_iterativo(n):
+    # Verificar si el número es un entero
+    if not isinstance(n, int):
+        return "Error: El valor ingresado no es un número entero."
+    
+    # Verificar si el número es negativo
+    if n < 0:
+        return "Error: El número debe ser mayor o igual a 0."
+
+    # Calcular el factorial de manera iterativa
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i
+    return resultado
+
+# operaciones.py
+
+def factorial_iterativo(n):
+    # Verificar si el número es un entero
+    if not isinstance(n, int):
+        return "Error: El valor ingresado no es un número entero."
+    
+    # Verificar si el número es negativo
+    if n < 0:
+        return "Error: El número debe ser mayor o igual a 0."
+
+    # Calcular el factorial de manera iterativa
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i
+    return resultado
+
+def factorial_rescursivo(num1):
+    if not isinstance(num1, (int)):
+        raise ValueError("El valor debe ser int.")
+    else:
+        if num1 == 0:
+            return 1
+        else:
+            return num1 * factorial_rescursivo(num1-1)

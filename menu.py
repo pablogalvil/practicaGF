@@ -1,4 +1,4 @@
-from operaciones import sumar, restar, multiplicar, dividir
+from operaciones import sumar, restar, multiplicar, dividir,factorial_iterativo
 
 def mostrar_menu():
     print("Menú de opciones:")
@@ -57,6 +57,16 @@ def mostrar_menu():
     elif opcion == '5':
         # Opción de salir
         print("Saliendo...")
+    elif opcion == 6:
+        numero = int(input("Ingrese un número para calcular su factorial: "))
+        resultado = factorial_iterativo(numero)
+        print(f"El factorial de {numero} es {resultado}")
+    elif opcion == '6':
+        num1 = input("Introduce el primer numero: ")
+        
+        num1 = int(num1)
+        
+        print(f"El factorial de {num1} es {factorial_rescursivo(num1)}")
     else:
         print("Opcion no valida")
     return opcion
