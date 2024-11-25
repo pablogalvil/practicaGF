@@ -82,3 +82,19 @@ def factorial_rescursivo(num1):
             return 1
         else:
             return num1 * factorial_rescursivo(num1-1)
+            def fibonacci_iterativo(num):
+    if not isinstance(num, (int)):
+        raise ValueError("El valor debe ser int.")
+    else:
+        if num == 0:
+            return 0
+        elif num == 1:
+            return 1
+        else:
+            a = 0
+            b = 1
+            for i in range(2, num):
+                c = a + b
+                a = b
+                b = c
+            return b
