@@ -1,4 +1,4 @@
-from operaciones import sumar, restar, multiplicar, dividir,factorial_iterativo, factorial_rescursivo
+from operaciones import sumar, restar, multiplicar, dividir, factorial_iterativo, factorial_rescursivo, fibonacci_iterativo
 
 def mostrar_menu():
     print("Menú de opciones:")
@@ -8,7 +8,8 @@ def mostrar_menu():
     print("4- Dividir")
     print("5- Salir")
     print("6- Factorial iterativo")
-    print("8- Factorial recursivo")
+    print("7- Factorial recursivo")
+    print("8- Fibonacci")
     
     # Pedir al usuario que seleccione una opción
     opcion = input("Seleccione una opcion (1-5): ")
