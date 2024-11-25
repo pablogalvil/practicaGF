@@ -1,25 +1,25 @@
 def sumar(num1, num2):
-    if ((num1.isinteger() or num1.isdecimal()) and (num2.isinteger() or num2.isdecimal())):
-        return (num1+num2)
+    if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+        raise ValueError("Ambos valores deben ser int o float.")
     else:
-        print("No son enteros o float")
+        return (num1+num2)
 
 def restar(num1, num2):
-    if ((num1.isinteger() or num1.isdecimal()) and (num2.isinteger() or num2.isdecimal())):
-        return (num1-num2)
+    if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+        raise ValueError("Ambos valores deben ser int o float.")
     else:
-        print("No son enteros o float")
+        return (num1-num2)
 
 def multiplicar(num1, num2):
-    if ((num1.isinteger() or num1.isdecimal()) and (num2.isinteger() or num2.isdecimal())):
+    if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+        raise ValueError("Ambos valores deben ser int o float.")
+    else:
         i = 1
         resultado = num1
         while (i <= num2):
             resultado = resultado + num1
             i = i + 1
         return (num1)
-    else:
-        print("No son enteros o float")
 
 def dividir(a, b):
     # Comprobar que los valores sean int o float
