@@ -11,15 +11,15 @@ def mostrar_menu():
     # Pedir al usuario que seleccione una opción
     opcion = input("Seleccione una opcion (1-5): ")
 
-    if opcion = 1:
+    if opcion == 1:
         num1 = input("Introduce el primer numero: ")
         num2 = input("Introduce el segundo numero: ")
         sumar(num1, num2)
-    elif opcion = 2:
+    elif opcion == 2:
         num1 = input("Introduce el primer numero: ")
         num2 = input("Introduce el segundo numero: ")
         restar(num1, num2)
-    elif opcion = 3:
+    elif opcion == 3:
         num1 = input("Introduce el primer numero: ")
         num2 = input("Introduce el segundo numero: ")
         multiplicar(num1, num2)
@@ -42,7 +42,6 @@ def mostrar_menu():
     elif opcion == '5':
         # Opción de salir
         print("Saliendo...")
-        break
     else:
         print("Opcion no valida")
     return opcion
