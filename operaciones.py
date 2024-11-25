@@ -39,3 +39,12 @@ def dividir(a, b):
     # Si la división no es exacta, se devuelve el residuo
     residuo = a
     return resultado, residuo
+
+def factorial_rescursivo(num1):
+    if not isinstance(num1, (int)):
+        raise ValueError("El valor debe ser int.")
+    else:
+        if num1 == 0:
+            return 1
+        else:
+            return num1 * factorial_rescursivo(num1-1)

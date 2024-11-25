@@ -7,6 +7,7 @@ def mostrar_menu():
     print("3- Multiplicar")
     print("4- Dividir")
     print("5- Salir")
+    print("6- Calcular el factorial de un numero (recursivo)")
     
     # Pedir al usuario que seleccione una opción
     opcion = input("Seleccione una opcion (1-5): ")
@@ -57,6 +58,12 @@ def mostrar_menu():
     elif opcion == '5':
         # Opción de salir
         print("Saliendo...")
+    elif opcion == '6':
+        num1 = input("Introduce el primer numero: ")
+        
+        num1 = int(num1)
+        
+        print(f"El factorial de {num1} es {factorial_rescursivo(num1)}")
     else:
         print("Opcion no valida")
     return opcion
